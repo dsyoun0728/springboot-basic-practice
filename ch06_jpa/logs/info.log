@@ -1,0 +1,15 @@
+[2022-09-14 09:49:24.872] [INFO ] [main] com.springboot.jpa.JpaApplication Starting JpaApplication using Java 11.0.16.1 on DESKTOP-6VD51LK with PID 13852 (C:\Users\dongsub_youn\Desktop\study\springboot-basic-practice\ch06_jpa\target\classes started by dongsub_youn in C:\Users\dongsub_youn\Desktop\study\springboot-basic-practice\ch06_jpa)
+[2022-09-14 09:49:24.873] [INFO ] [main] com.springboot.jpa.JpaApplication No active profile set, falling back to default profiles: default
+[2022-09-14 09:49:25.602] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2022-09-14 09:49:25.608] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2022-09-14 09:49:25.609] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-09-14 09:49:25.609] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2022-09-14 09:49:25.674] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2022-09-14 09:49:25.674] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 760 ms
+[2022-09-14 09:49:25.898] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-09-14 09:49:26.018] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2022-09-14 09:49:26.031] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2022-09-14 09:49:26.032] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2022-09-14 09:49:26.041] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2022-09-14 09:49:26.056] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2022-09-14 09:49:26.069] [INFO ] [main] com.springboot.jpa.JpaApplication Started JpaApplication in 1.578 seconds (JVM running for 2.191)
