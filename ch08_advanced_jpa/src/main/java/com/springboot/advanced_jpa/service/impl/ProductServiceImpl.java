@@ -3,7 +3,6 @@ package com.springboot.advanced_jpa.service.impl;
 import com.springboot.advanced_jpa.data.dao.ProductDao;
 import com.springboot.advanced_jpa.data.dto.ProductDto;
 import com.springboot.advanced_jpa.data.dto.ProductResponseDto;
-import com.springboot.advanced_jpa.data.dto.ProductResponseDto.ProductResponseDtoBuilder;
 import com.springboot.advanced_jpa.data.entity.Product;
 import com.springboot.advanced_jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +23,11 @@ public class ProductServiceImpl implements ProductService {
   public ProductResponseDto getProduct(Long number) {
     Product product = productDao.selectProduct(number);
 
-    ProductResponseDto productResponseDto = new ProductResponseDtoBuilder()
-        .number(product.getNumber())
-        .name(product.getName())
-        .price(product.getPrice())
-        .stock(product.getStock())
-        .build();
+    ProductResponseDto productResponseDto = new ProductResponseDto();
+    productResponseDto.setNumber(product.getNumber());
+    productResponseDto.setName(product.getName());
+    productResponseDto.setPrice(product.getPrice());
+    productResponseDto.setStock(product.getStock());
 
     return productResponseDto;
   }
@@ -45,12 +43,11 @@ public class ProductServiceImpl implements ProductService {
 
     Product savedProduct = productDao.insertProduct(product);
 
-    ProductResponseDto productResponseDto = new ProductResponseDtoBuilder()
-        .number(savedProduct.getNumber())
-        .name(savedProduct.getName())
-        .price(savedProduct.getPrice())
-        .stock(savedProduct.getStock())
-        .build();
+    ProductResponseDto productResponseDto = new ProductResponseDto();
+    productResponseDto.setNumber(product.getNumber());
+    productResponseDto.setName(product.getName());
+    productResponseDto.setPrice(product.getPrice());
+    productResponseDto.setStock(product.getStock());
 
     return productResponseDto;
   }
@@ -59,12 +56,11 @@ public class ProductServiceImpl implements ProductService {
   public ProductResponseDto changeProductName(Long number, String name) throws Exception {
     Product changedProduct = productDao.updateProductName(number, name);
 
-    ProductResponseDto productResponseDto = new ProductResponseDtoBuilder()
-        .number(changedProduct.getNumber())
-        .name(changedProduct.getName())
-        .price(changedProduct.getPrice())
-        .stock(changedProduct.getStock())
-        .build();
+    ProductResponseDto productResponseDto = new ProductResponseDto();
+    productResponseDto.setNumber(changedProduct.getNumber());
+    productResponseDto.setName(changedProduct.getName());
+    productResponseDto.setPrice(changedProduct.getPrice());
+    productResponseDto.setStock(changedProduct.getStock());
 
     return productResponseDto;
   }
